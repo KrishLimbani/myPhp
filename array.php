@@ -74,5 +74,34 @@ foreach($flip as$keys => $values){
     echo "this is key{$keys} and this is values {$values} <br>";
 }
 
+
+// array shorting 
+
+$sort = array(2,5,7,1,4,10,8,7,9,6);
+echo "this is array sort function <br>";
+
+sort($sort); //this is for sorting an indexed array in ascending order
+rsort($sort); //this is for sortin an indexed array in discending order
+
+for($i= 0; $i  <= count($sort); $i++){
+    echo $sort[$i]. "<br>";
+}
+
+// sort an associative array
+
+
+$aso_arr = array(3=>"Banana", 1=>"Mango", 4=>"orenge", 2=>"kiwi");
+echo "this is asort function so it can use to sort an array`s key only <br>";
+asort($aso_arr);
+ksort($aso_arr);
+
+arsort($aso_arr);
+krsort($aso_arr);
+
+
+foreach($aso_arr as $key => $values){
+    echo "this is keys {$key} and this is values {$values} <br>";
+}
+
 ?>
 
