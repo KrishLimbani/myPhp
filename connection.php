@@ -1,14 +1,12 @@
 <?php
-    $server = "localhost";
-    $user = "root";
-    $pass = "";
-    $database = "form";
+    
+    $conn = new mysqli('localhost','root','','db_food_order');
 
-    $conn = mysqli_connect($server, $user, $pass, $database);
-    if($conn){
-        echo "connection successfully";
+    if(!$conn){
+        die("connection failed");
     }else{
-        echo "connection failled...";
+        echo "connection successfully";
     }
 
 ?>
+

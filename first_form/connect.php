@@ -6,6 +6,7 @@
     $email = $_POST["email"];
     $password = $_POST["password"];
     $number = $_POST["number"];
+    $cpass = $_POST["cpassword"];
 
 // Database connection
 
@@ -21,6 +22,7 @@ if($con->connect_error){
     $stmt->close();
     $con->close();  
 }
+
 
 
 ?>

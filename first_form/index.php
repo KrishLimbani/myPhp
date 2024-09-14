@@ -75,6 +75,12 @@
                   type="password"
                   class="form-control"
                   name="password"
+                /><br>
+                <label for="password"> conform Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  name="cpassword"
                 />
               </div>
               <div class="form-group">
