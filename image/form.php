@@ -25,20 +25,14 @@
 </html>
 
 <?php
+if(isset($_POST['sub'])){
+    $fimage = $_FILES["img"]["name"];
+    $tmpname = $_FILES["img"]["tmp_name"];
+    $folder = "img/".$fimage; 
 
-$filename = $_FILES["img"]["name"];
-$tempname = $_FILES["img"]["tmp_name"];
-
-$folder = "img/".$filename;
-
-if(move_uploaded_file($tempname, $folder)){
-    echo "file uploaded";
-}else{
-    echo "file not uploaded";
+    move_uploaded_file($tmpname, $folder);
 }
- 
 
-// echo " <img src='$folder' height='100px' width='100px'>";
 
 
 ?>
